@@ -1,0 +1,44 @@
+
+<div class="card text-center">
+<div class="card-header">
+  <br><strong> Details </strong> </br>
+</div>
+<p id="notice"><%= notice %></p>
+
+<p>
+<h5 class="card-title"><strong>Report Name:</strong> 
+  <%= @report.report_name %>
+</p>
+
+<p>
+<h5 class="card-title"><strong>description:</strong><%= @report.description %>
+</p>
+
+<p>
+<h5 class="card-title"><strong>version:</strong> 
+  <%= @report.version %>
+</p>
+
+<p>
+<h5 class="card-title"><strong>SVN Path:</strong> 
+  
+  <%= link_to @report.svn_pth, "https://#{@report.svn_pth}", :target => "_blank" %></p>
+
+</p>
+
+<p>
+<h5 class="card-title"><strong>ORADOCS Path:</strong> 
+  
+<%= link_to @report.oradoc_path, "https://#{@report.oradoc_path}",  :target=>"_blank"  %>
+</p>
+
+<p>
+<h5 class="card-title"><strong>DB Reference:</strong> 
+  <%= @report.db_tab_cols_used %>
+</p>
+
+<div href="#" class="btn btn-success"> <%= link_to 'Edit', edit_report_path(@report) %> </div>
+<div href="#" class="btn btn-warning">  <%= link_to 'Back', reports_path %> </div>
+</div>
+    
+</div>

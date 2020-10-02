@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report_name: MyString
+  description: MyText
+  version: 1
+  svn_pth: MyText
+  oradoc_path: MyText
+  db_tab_cols_used: MyText
+
+two:
+  report_name: MyString
+  description: MyText
+  version: 1
+  svn_pth: MyText
+  oradoc_path: MyText
+  db_tab_cols_used: MyText

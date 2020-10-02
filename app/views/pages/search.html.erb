@@ -1,0 +1,11 @@
+<h3>Search Result</h3>  
+    <% cnt=1 %>
+        
+    <% @results.each do |result| %>  
+        <br>
+        <%= cnt %>. <strong>Report Name:<strong><%= result.report_name %> <br> <br>
+        <div href="#" class="btn btn-success"> <%= link_to 'Show',result%> </div>
+        <div href="#" class="btn btn-info"><%= link_to 'Back', root_path %> </div>
+        <br>
+        <% cnt=cnt+1 %>
+    <% end %>
